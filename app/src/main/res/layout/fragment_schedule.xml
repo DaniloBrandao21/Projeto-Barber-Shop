@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.ScheduleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_shape_2"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/text_Schedule_an_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_Schedule_an_appointment"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_select_date"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_Schedule_an_appointment" />
+
+        <ImageView
+            android:id="@+id/imageView_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_select_date" />
+
+        <TextView
+            android:id="@+id/text_selected_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_selected_date"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_calendar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView_calendar" />
+
+        <TextView
+            android:id="@+id/text_select_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_select_time"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView_calendar" />
+
+        <Spinner
+            android:id="@+id/Spinner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/segoeui"
+            android:paddingStart="10dp"
+            android:paddingEnd="24dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_select_time" />
+
+        <TextView
+            android:id="@+id/text_selected_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_selected_time"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Spinner_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Spinner_time"
+            app:layout_constraintTop_toTopOf="@+id/Spinner_time" />
+
+        <TextView
+            android:id="@+id/text_select_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_select_service"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Spinner_time" />
+
+
+       <RadioGroup
+           android:id="@+id/radio_group_service"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/text_select_service">
+
+           <RadioButton
+               android:id="@+id/radioButton_Cabelo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:text="@string/radio_cabelo"
+               android:textColor="@color/white"
+               app:layout_constraintTop_toBottomOf="@id/text_Schedule_an_appointment"/>
+           <RadioButton
+               android:id="@+id/radioButton_Barba"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:text="@string/radio_barba"
+               android:textColor="@color/white"
+               app:layout_constraintTop_toBottomOf="@id/text_Schedule_an_appointment"/>
+           <RadioButton
+               android:id="@+id/radioButton_Cabelo_barba"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:text="@string/text_service"
+               android:textColor="@color/white"
+               app:layout_constraintTop_toBottomOf="@id/text_Schedule_an_appointment"/>
+           <RadioButton
+               android:id="@+id/radioButton_Sobrancelha"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:text="@string/radio_sobrancelha"
+               android:textColor="@color/white"
+               app:layout_constraintTop_toBottomOf="@id/text_Schedule_an_appointment"/>
+           <RadioButton
+               android:id="@+id/radioButton_Platinado"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:text="@string/radio_platinado"
+               android:textColor="@color/white"
+               app:layout_constraintTop_toBottomOf="@id/text_Schedule_an_appointment"/>
+
+       </RadioGroup>
+        <TextView
+            android:id="@+id/text_select_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_select_employee"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radio_group_service" />
+
+        <Spinner
+            android:id="@+id/spinner_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/segoeui"
+            android:paddingStart="10dp"
+            android:paddingEnd="24dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_select_employee" />
+
+        <TextView
+            android:id="@+id/text_selected_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_selected_employee"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_employee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner_employee" />
+
+        <TextView
+            android:id="@+id/text_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_value"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/text_value_final"
+            app:layout_constraintTop_toBottomOf="@+id/text_selected_employee" />
+
+        <TextView
+            android:id="@+id/text_value_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/text_value_final"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_selected_employee" />
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/segoeui"
+            android:text="continuar"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_value_final"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

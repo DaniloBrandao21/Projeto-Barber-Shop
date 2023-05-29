@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape"
+    android:orientation="vertical"
+
+    android:padding="30dp"
+    tools:context=".view.RegisterActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/segoeui"
+        android:text="@string/text_fill_informations"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="@font/segoeui"
+        android:hint="@string/text_name"
+        android:paddingStart="16dp"
+        android:textColorHint="@color/gray_color_hint"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="@font/segoeui"
+        android:hint="@string/text_email"
+        android:paddingStart="16dp"
+        android:textColorHint="@color/gray_color_hint"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="@font/segoeui"
+        android:hint="@string/text_phone"
+        android:paddingStart="16dp"
+        android:textColorHint="@color/gray_color_hint"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="@font/segoeui"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textColorHint="@color/gray_color_hint"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_password_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="@font/segoeui"
+        android:hint="@string/text_password_conformed"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textColorHint="@color/gray_color_hint"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="@font/segoeui"
+        android:text="@string/button_register"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_color_hint"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

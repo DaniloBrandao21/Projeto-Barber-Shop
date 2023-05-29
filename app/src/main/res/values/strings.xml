@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Barber Shop - APP</string>
+    <string name="text_welcome">Bem-Vindo</string>
+    <string name="text_client">Cliente</string>
+    <string name="text_employee">Funcionário</string>
+    <string name="text_no_register">Ainda não tem cadastro ?</string>
+    <string name="text_register"><u>Clique aqui</u></string>
+    <string name="button_enter">Entrar</string>
+    <string name="text_password">Senha</string>
+    <string name="text_email">E-mail</string>
+    <string name="text_phone">Telefone</string>
+    <string name="text_name">nome</string>
+    <string name="button_register">Cadastrar</string>
+    <string name="text_fill_informations">Preencha as informações abaixo!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_welcome_user">Bem-Vindo, Guilherme</string>
+    <string name="text_schedule">Agenda:</string>
+    <string name="text_date">14/03/2023</string>
+    <string name="text_service">Cabelo + Barba</string>
+    <string name="text_employer_2">Funcionário:</string>
+    <string name="text_employee_name">Danilo</string>
+    <string name="text_time">13:00</string>
+    <string name="text_price">50,00</string>
+    <string name="text_Schedule_an_appointment">Deseja agendar um horário?</string>
+    <string name="text_select_date">Selecione uma data:</string>
+    <string name="text_selected_date">14/04/2023</string>
+    <string name="text_select_time">Selecione um horário:</string>
+    <string name="complete_select_time">13:00</string>
+    <string name="text_selected_time">13:00</string>
+    <string name="text_select_service">Selecione um serviço:</string>
+    <string name="text_select_employee">Selecione um funcionário:</string>
+    <string name="text_selected_employee">Danilo</string>
+    <string name="text_value">Valor:</string>
+    <string name="text_value_final">100,00</string>
+    <string name="radio_platinado">Platinado</string>
+    <string name="radio_sobrancelha">Sobrancelha</string>
+    <string name="radio_barba">Barba</string>
+    <string name="radio_cabelo">Cabelo</string>
+    <string name="text_password_conformed">Confirmar senha</string>
+
+    <string-array name="time">
+        <item> 09:00</item>
+        <item> 10:00</item>
+        <item> 11:00</item>
+        <item> 13:00</item>
+        <item> 14:00</item>
+        <item> 15:00</item>
+        <item> 16:00</item>
+        <item> 17:00</item>
+        <item> 18:00</item>
+    </string-array>
+
+
+    <string-array name="name">
+        <item> Danilo</item>
+        <item> Renato</item>
+        <item> José</item>
+        <item> Marcos</item>
+        <item> Rodrigo</item>
+
+    </string-array>
+
+</resources>
